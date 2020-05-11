@@ -1,0 +1,31 @@
+{%- assign pagelist = site.html_pages | sort: "url" -%}
+{%- assign child_pages = "" | split: ',' -%}
+{%- assign my_url_len = include.page.url.size -%}
+{%- assign my_url_components = include.page.url | split: "/" -%}
+{%- assign child_componentcount = include.page.url | split: "/" | size -%}
+{%- if child_componentcount == 0 -%}
+    {%- assign child_componentcount = child_componentcount | plus: 2 -%}
+{%- else -%}
+    {%- assign child_componentcount = child_componentcount | plus: 1 -%}
+{%- endif -%}
+{%- for page in pagelist -%}
+    {%- assign slice_result = page.url | slice: 0, my_url_len -%}
+    {%- if include.page.url != page.url -%}
+        {%- if slice_result == include.page.url -%}
+            {%- assign this_url_partcount = page.url | split: "/" | size -%}
+            {%- if child_componentcount == this_url_partcount -%}
+                {%- assign child_pages = child_pages | push: page -%}
+            {%- endif -%}
+        {%- endif -%}
+    {%- endif -%}
+{%- endfor -%}
+{%- if child_pages.size > 0 -%}
+    <ul>
+        {%- for page in child_pages -%}
+            <li>
+                <a href="{{ page.url | relative_url }}">{{page.title}}</a>
+                {% include navtreenode.html page=page %}
+            </li>
+        {%- endfor -%}
+    </ul>
+{%- endif -%}
