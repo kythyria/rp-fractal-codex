@@ -1,0 +1,131 @@
+@import "normalize";
+@import "rouge-github";
+
+$nav-border: #999;
+$sidebar-width: 16rem;
+$content-width: 44rem;
+$page-width: $sidebar-width + $content-width + $sidebar-width + 1rem + 1rem;
+
+* { 
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template:
+        "header header"   min-content
+        "nav    content"        1fr
+        "footer footer"   min-content;
+    grid-template-columns: $sidebar-width auto;
+    min-height: 100%;
+
+    font-family: "Tahoma";
+    font-size: 11pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Franklin Gothic";
+}
+
+#content {
+    grid-area: content; 
+    justify-self: center;
+    line-height: 140%;
+}
+
+#pagehead {
+    border-bottom: 1px solid #999;
+    background: #D2ECFF;
+    padding: 2ch;
+    
+    h1 {
+        margin: 0;
+    }
+}
+
+#pagecontent {
+    
+    margin: 2ch;
+    max-width: $content-width;
+}
+
+body > header {
+    grid-area: header;
+
+    background: /*#8CAAE6*/ #83A6F4;
+    border-bottom: 1px solid $nav-border;
+
+    h1 {
+        margin: 1ch;
+    }
+
+    h1 a {
+        color: black;
+        text-decoration: none;
+    }
+
+}
+
+body > nav {
+    background: #F1F1F1;
+    border-right: 1px solid $nav-border;
+    grid-area: nav;
+
+    ul {
+        padding-left: 1em;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    a {
+        border: 1px solid transparent;
+        border-right: none;
+        width: 100%;
+        display: block;
+        padding: 0.25ch;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        border-color: $nav-border;
+        background: #ccc;
+    }
+}
+
+#toc {
+    border: 1px solid #999;
+    /*border-left: 2px solid #E5E5E5;
+    border-right: 2px solid #E5E5E5;*/
+    margin: 1ch;
+    padding: 1ch;
+    background-color: #F1F1F1;
+    display: table;
+    
+    ol {
+        counter-reset: toc-entry;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    ol ol {
+        padding-left: 2ch;
+    }
+
+    li::before {
+        counter-increment: toc-entry;
+        content: counters(toc-entry, ".") " ";
+    }
+}
+
+body > footer {
+    grid-area: footer;
+    border-top: 1px solid $nav-border;
+    background: #B7D3FC;
+}

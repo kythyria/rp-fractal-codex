@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
+        {% seo %}
+    </head>
+    <body>
+        <header>
+            <h1>
+                <a href="{{"/" | relative_url}}">{{ site.title }}</a>
+            </h1>
+        </header>
+        <article id="content">
+            <header id="pagehead">
+                <h1>{{ page.title }}</h1>
+            </header>
+            {%- capture toc_ws -%}{%- include toc.html html=content ordered=true -%}{%- endcapture -%}
+            {%- assign toc = toc_ws | strip -%}
+            {%- if toc != "" -%}
+                <div id="toc">
+                    {{toc}}
+                </div>
+            {%- endif -%}
+            <div id="pagecontent">
+            {{ content }}
+            </div>
+        </article>
+        {% include sidenav.html %}
+        <footer>
+            Er, some kind of footer
+        </footer>
+    </body>
+</html>

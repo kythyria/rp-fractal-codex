@@ -22,6 +22,9 @@
 {%- if child_pages.size > 0 -%}
     <ul>
         {%- for page in child_pages -%}
+            {%- if page.url == "/404.html" or page.url == "/" -%}
+                {%- continue -%}
+            {%- endif -%}
             <li>
                 <a href="{{ page.url | relative_url }}">{{page.title}}</a>
                 {% include navtreenode.html page=page %}
