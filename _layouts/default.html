@@ -32,7 +32,9 @@
         </article>
         {% include sidenav.html %}
         <footer>
-            Er, some kind of footer
+            <p class="buildid">
+                Revision {{ site.github.build_revision | slice: 0,6 }}.
+            </p>
         </footer>
     </body>
 </html>

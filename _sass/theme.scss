@@ -39,14 +39,14 @@ h1, h2, h3, h4, h5, h6 {
 
 #pagehead {
     border-bottom: 1px solid #999;
-    background: /*#D2ECFF #285BC5*/ #3366CC;
+    background: /*#D2ECFF #285BC5*/ /*#3366CC*/ #f1ffff;
     padding: 2ch;
     
     h1 {
         margin: auto;
         max-width: $content-width - $content-pad*2;
-        text-shadow: 2px 2px #6487DC;
-        color: white;
+        text-shadow: 2px 2px #B7D3FC;
+        color: black;
     }
 }
 
