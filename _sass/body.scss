@@ -1,0 +1,20 @@
+#pagecontent {
+    h1 {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 0.5rem;
+    }
+
+    blockquote {
+        border-left: 3px solid #ccc;
+        margin: 1em 10px;
+        padding: 0 30px 0 10px;
+    }
+
+    .footnotes {
+        border-top: 1px solid #ccc;
+    }
+    .footnotes::before {
+        content: "Footnotes";
+        font-variant: small-caps;
+    }
+}

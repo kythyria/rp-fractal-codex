@@ -21,13 +21,14 @@
 {%- endfor -%}
 {%- if child_pages.size > 0 -%}
     <ul>
-        {%- for page in child_pages -%}
-            {%- if page.url == "/404.html" or page.url == "/" -%}
+        {%- for thispage in child_pages -%}
+            {%- if thispage.url == "/404.html" or thispage.url == "/" -%}
                 {%- continue -%}
             {%- endif -%}
             <li>
-                <a href="{{ page.url | relative_url }}">{{page.title}}</a>
-                {% include navtreenode.html page=page %}
+                {%-capture classname-%}{%- if thispage.url == page.url -%}class="current"{%- endif -%}{%-endcapture-%}
+                <a href="{{ thispage.url | relative_url }}" {{classname}}>{{thispage.title}}</a>
+                {% include navtreenode.html page=thispage %}
             </li>
         {%- endfor -%}
     </ul>

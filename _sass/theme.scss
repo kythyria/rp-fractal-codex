@@ -5,6 +5,7 @@ $nav-border: #999;
 $sidebar-width: 16rem;
 $content-width: 44rem;
 $page-width: $sidebar-width + $content-width + $sidebar-width + 1rem + 1rem;
+$content-pad: 1rem;
 
 * { 
     box-sizing: border-box;
@@ -32,42 +33,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #content {
-    grid-area: content; 
-    justify-self: center;
+    grid-area: content;
     line-height: 140%;
 }
 
 #pagehead {
     border-bottom: 1px solid #999;
-    background: #D2ECFF;
+    background: /*#D2ECFF #285BC5*/ #3366CC;
     padding: 2ch;
     
     h1 {
-        margin: 0;
+        margin: auto;
+        max-width: $content-width - $content-pad*2;
+        text-shadow: 2px 2px #6487DC;
+        color: white;
     }
 }
 
 #pagecontent {
-    
-    margin: 2ch;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0ch $content-pad 0ch $content-pad;
     max-width: $content-width;
 }
 
 body > header {
     grid-area: header;
+    height: 128px;
 
-    background: /*#8CAAE6*/ #83A6F4;
+    background: /*#8CAAE6 #83A6F4 */ #B7D3FC;
     border-bottom: 1px solid $nav-border;
 
+    display: grid;
+    grid-template: "logo";
+    padding: 0 2rem;
+
     h1 {
-        margin: 1ch;
+        grid-area: logo;
     }
-
-    h1 a {
-        color: black;
-        text-decoration: none;
-    }
-
 }
 
 body > nav {
@@ -83,29 +86,31 @@ body > nav {
         list-style: none;
     }
     
-    a {
+    a, span {
         border: 1px solid transparent;
         border-right: none;
         width: 100%;
         display: block;
         padding: 0.25ch;
         text-decoration: none;
+        
+        &:hover {
+            border-color: $nav-border;
+            background: #ccc;
+        }
     }
     
-    a:hover {
-        border-color: $nav-border;
-        background: #ccc;
+
+    .current {
+        font-weight: bold;
     }
 }
 
 #toc {
-    border: 1px solid #999;
-    /*border-left: 2px solid #E5E5E5;
-    border-right: 2px solid #E5E5E5;*/
-    margin: 1ch;
-    padding: 1ch;
-    background-color: #F1F1F1;
-    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0ch 2ch 0ch 2ch;
+    max-width: $content-width;
     
     ol {
         counter-reset: toc-entry;
@@ -114,6 +119,17 @@ body > nav {
         padding: 0;
     }
 
+    & > ol {
+        border: 1px solid #999;
+        margin: 1ch 0ch;
+        padding: 1ch;
+        padding-top: 0.5ch;
+        background-color: #F1F1F1;
+        display: table;
+    }
+
+    
+
     ol ol {
         padding-left: 2ch;
     }
@@ -121,6 +137,12 @@ body > nav {
     li::before {
         counter-increment: toc-entry;
         content: counters(toc-entry, ".") " ";
+    }
+
+    & > ol::before {
+        content: "Contents";
+        font-variant: small-caps;
+        text-align: center;
     }
 }
 
