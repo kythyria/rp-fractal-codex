@@ -1,7 +1,8 @@
 @import "normalize";
 @import "rouge-github";
 
-$nav-border: #999;
+$primary-border: #999;
+$secondary-bg: #f1f1f1;
 $sidebar-width: 16rem;
 $content-width: 44rem;
 $page-width: $sidebar-width + $content-width + $sidebar-width + 1rem + 1rem;
@@ -38,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #pagehead {
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid $primary-border;
     background: /*#D2ECFF #285BC5*/ /*#3366CC*/ #f1ffff;
     padding: 2ch;
     
@@ -62,7 +63,7 @@ body > header {
     height: 128px;
 
     background: /*#8CAAE6 #83A6F4 */ #B7D3FC;
-    border-bottom: 1px solid $nav-border;
+    border-bottom: 1px solid $primary-border;
 
     display: grid;
     grid-template: "logo";
@@ -75,7 +76,7 @@ body > header {
 
 body > nav {
     background: #F1F1F1;
-    border-right: 1px solid $nav-border;
+    border-right: 1px solid $primary-border;
     grid-area: nav;
 
     ul {
@@ -95,7 +96,7 @@ body > nav {
         text-decoration: none;
         
         &:hover {
-            border-color: $nav-border;
+            border-color: $primary-border;
             background: #ccc;
         }
     }
@@ -120,11 +121,11 @@ body > nav {
     }
 
     & > ol {
-        border: 1px solid #999;
+        border: 1px solid $primary-border;
         margin: 1ch 0ch;
         padding: 1ch;
         padding-top: 0.5ch;
-        background-color: #F1F1F1;
+        background-color: $secondary-bg;
         display: table;
     }
 
@@ -148,6 +149,6 @@ body > nav {
 
 body > footer {
     grid-area: footer;
-    border-top: 1px solid $nav-border;
+    border-top: 1px solid $primary-border;
     background: #B7D3FC;
 }

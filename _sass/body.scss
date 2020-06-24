@@ -21,4 +21,18 @@
     img {
         width: 100%;
     }
+
+    table {
+        border: 1px solid $primary-border;
+    }
+
+    td, th {
+        border: 1px solid $primary-border;
+        padding: 0.3em;
+    }
+
+    th {
+        background: $secondary-bg;
+        text-align: left;
+    }
 }

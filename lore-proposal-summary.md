@@ -1,19 +1,6 @@
 ---
 title: Lore Proposal Summary
 ---
-# Geography
-## Nexus’ continent
-
-> Light gray is Machine (Mountains)  
-> Purple is Dark (???)  
-> Yellow is Holy (Plains)  
-> Red is Dragon (Volcanoes)  
-> Green is Insect/Plant (Jungle)  
-> Sky Blue is Bird (Hills)  
-> Blue is Aquan (Seas, Oceans and Archipelagos)  
-> The Xs are let's say the capital... so uh... yeah I'm not fooling around with this supercontinent  
-> the unmarked territory is what I kind of call the "Wild zone"  
-> wait I think I forgot beasts
 
 # Organisations
 Mew proposed an organisation called the Templars that try to keep the human and digimon worlds separate.
