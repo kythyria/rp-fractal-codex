@@ -151,4 +151,9 @@ body > footer {
     grid-area: footer;
     border-top: 1px solid $primary-border;
     background: #B7D3FC;
+
+    & > p {
+        font-size: 0.8em;
+        margin: 0.5em;
+    }
 }
