@@ -1,0 +1,21 @@
+---
+title: "Location: Kurdagh and Orion Shipyard"
+---
+Simon walks around here like he owns the place, and for all practical purposes he _does_. But there's more to it than that.
+
+Being a shipyard, it _is_ located on a body of water, but little attention is paid to this compared to what humans might expect. Well, humans who don't watch much sci-fi, anyway: the flagship productions here all fly, so water is fairly optional. It's a compact, almost crammed together place, very industrial revolution/victorian with red brick and black-painted iron in considerable evidence, and the way the river comes up into the facility is that someone dug a canal[^canal] and tidiet the walls up with brick.
+
+[^canal]: It has a couple of disused branches, too, one clearly ending in a cul-de-sac made of two high walls for the sides, and a slightly lower one for the far end.
+
+Simon's name isn't over the door, except as acknowledging him as currently running the place, and as far as anyone can recall neither hide nor hair of the five original bigwigs, Kurdagh, Butterworth, Orion, Orion, and Fortune, has been seen in longer than he was around. It's a long story, with accusations of pocket-lining, nepotism, and general C-suite underhandedness that led to the five of them totally ignoring the actual shipyard in favour of shouting at and undermining each other. Kurdagh was forced out, then the Orion twins fell really fell out and stormed off in opposing directions, taking the other two with them after a spate of &ldquo;this is my side&rdquo; line-drawing and trying to cause industrial action on the other side of said line.
+
+If digimon cared as much as humans do about this sort of thing, the ownership of the yard would be a horrible legal tangle, but in practice Simon actually does count as owning the place by this point[^ownership]. The local reputation of the original founders was ruined by their protracted falling out[^fallout] anyway, so nobody's eager to have them back.
+
+These days, the yard produces flying ships of the decidedly steampunk through dieselpunk variety; generally of the gasbag with a boat hull suspended underneath form factor, but not always. For a fee, they can build things that just plain hover, it's just much more expensive than the dirigible kind. All are well-equipped, either for luxury or serious usage or occasionally both. Sizes range from little four-human skiffs to things respectable by the standards of the 1800s. Not all look like they could sail the seas, being build to land on land or hover just above it before sinking into a matching cradle. The default material is wood with a metal frame, usually varnished with brass fittings, and canvas envelopes printed with some suitable design.
+
+[^ownership]: Via management buyout on top of &ldquo;use it or lose it&rdquo; type rules.
+[^fallout]: Sadly, not out of a sixth-floor window, as much as everyone wished it at the time.
+
+The _really_ odd thing about the yard is the layout _outside_ the border fences: projecting away on the non-river side are two sort of blobby wings made of disused buildings, like an abandoned industrial park&mdash;you can still see rail sidings and pipes&mdash;in the tangle, so it's not really residential. Furthermore, if you zoom out, or are riding a [camera dragon](../character-sheets/calraith.md), you might see a few more villages and old factories in a similar architectural style&mdash;one or two of the latter still in use&mdash;stretching away. If you paid attention, you'd notice a pattern the industry clings to the edges of: a huge, roughly square, depression in the ground.
+
+The trees only just poke over the approximate top, and if it was once neatly square and flat bottomed, it's now overgrown and the sides have collapsed or been demolished in places. Another watercourse, the Shugart River actually emerges from what a moment's observation will reveal to be the pumping station keeping it from being flooded, and closer to the middle are the remnants of vast metallic and concrete constructions; a fanciful observer might imagine the shipyard's central bays writ huge.
